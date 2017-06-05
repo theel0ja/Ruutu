@@ -8,7 +8,11 @@ namespace Ruutu
     class OpenVLC
     {
 
-        public static void openVLC(Uri m3u8URL)
+        /// <summary>
+        ///  Tries to run VLC (with RunVLC function) with most popular paths, if not found, show file explorer
+        /// </summary>
+        /// <param name="m3u8URL">URL of .m3u8 file that's opened</param>
+        public static void Open(Uri m3u8URL)
         {
             string vlcPathA = "C:\\Program Files (x86)\\VideoLAN\\VLC\\vlc.exe";
             string vlcPathB = "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe";
@@ -16,11 +20,11 @@ namespace Ruutu
             // If vlc.exe exists in vlcPath,
             if (File.Exists(vlcPathA))
             {
-                runVLC(m3u8URL, vlcPathA);
+                RunVLC(m3u8URL, vlcPathA);
             }
             else if(File.Exists(vlcPathB))
             {
-                runVLC(m3u8URL, vlcPathB);
+                RunVLC(m3u8URL, vlcPathB);
             }
             else
             {
@@ -33,12 +37,17 @@ namespace Ruutu
                 {
                     vlcPathUserDefined = file.FileName;
 
-                    runVLC(m3u8URL, vlcPathUserDefined);
+                    RunVLC(m3u8URL, vlcPathUserDefined);
                 }
             }
         }
 
-        private static void runVLC(Uri m3u8URL, String vlcPath)
+        /// <summary>
+        ///  Starts VLC media player application
+        /// </summary>
+        /// <param name="m3u8URL">URL of .m3u8 file that's opened</param>
+        /// <param name="vlcPath">VLC's path</param>
+        private static void RunVLC(Uri m3u8URL, String vlcPath)
         {
             Application.Exit();
             Process p1 = new Process();

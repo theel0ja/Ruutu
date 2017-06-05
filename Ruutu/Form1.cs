@@ -20,17 +20,15 @@ namespace Ruutu
             }
             else
             {
-                Uri url;
-                bool urlParseResult = Uri.TryCreate(urlboksi.Text, UriKind.Absolute, out url);
+                bool urlParseResult = Uri.TryCreate(urlboksi.Text, UriKind.Absolute, out Uri url);
 
                 // Tuloksen tulee olla hyvä, sekä domainin pitää olla "www.ruutu.fi" ja alkaa "/video"
-                if(urlParseResult == true && url.Host == "www.ruutu.fi" && url.LocalPath.Split('/')[1] == "video")
+                if (urlParseResult == true && url.Host == "www.ruutu.fi" && url.LocalPath.Split('/')[1] == "video")
                 {
                     // Onko videoID int?
-                    int videoID;
-                    bool videoIDparseResult = int.TryParse(url.LocalPath.Split('/')[2], out videoID);
+                    bool videoIDparseResult = int.TryParse(url.LocalPath.Split('/')[2], out int videoID);
 
-                    if(videoIDparseResult == true)
+                    if (videoIDparseResult == true)
                     {
                         Uri mediaFileURL = GetMediaFileURL.getURL(videoID);
 
@@ -48,7 +46,7 @@ namespace Ruutu
                         {
                             // If no errors, open default media player
                             //MessageBox.Show("media file url: " + mediaFileURL);
-                            OpenVLC.openVLC(mediaFileURL);
+                            OpenVLC.Open(mediaFileURL);
                         }
                     }
                     else
