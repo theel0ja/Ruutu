@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.avaabtn = new System.Windows.Forms.Button();
+            this.Avaabtn = new System.Windows.Forms.Button();
             this.urlboksi = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -43,15 +43,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Anna ohjelman URL-osoite:";
             // 
-            // avaabtn
+            // Avaabtn
             // 
-            this.avaabtn.Location = new System.Drawing.Point(197, 25);
-            this.avaabtn.Name = "avaabtn";
-            this.avaabtn.Size = new System.Drawing.Size(75, 23);
-            this.avaabtn.TabIndex = 1;
-            this.avaabtn.Text = "Avaa";
-            this.avaabtn.UseVisualStyleBackColor = true;
-            this.avaabtn.Click += new System.EventHandler(this.avaabtn_Click);
+            this.Avaabtn.Location = new System.Drawing.Point(197, 25);
+            this.Avaabtn.Name = "Avaabtn";
+            this.Avaabtn.Size = new System.Drawing.Size(75, 23);
+            this.Avaabtn.TabIndex = 1;
+            this.Avaabtn.Text = "Avaa";
+            this.Avaabtn.UseVisualStyleBackColor = true;
+            this.Avaabtn.Click += new System.EventHandler(this.Avaabtn_Click);
             // 
             // urlboksi
             // 
@@ -62,19 +62,22 @@
             // 
             // Form1
             // 
-            this.AcceptButton = this.avaabtn;
+            this.AcceptButton = this.Avaabtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(284, 56);
             this.Controls.Add(this.urlboksi);
-            this.Controls.Add(this.avaabtn);
+            this.Controls.Add(this.Avaabtn);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(300, 95);
+            this.MinimumSize = new System.Drawing.Size(300, 95);
             this.Name = "Form1";
             this.Text = "Ruutu";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,7 +86,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button avaabtn;
+        private System.Windows.Forms.Button Avaabtn;
         private System.Windows.Forms.TextBox urlboksi;
     }
 }
