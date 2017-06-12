@@ -12,7 +12,7 @@ namespace Ruutu
         /// </summary>
         /// <param name="videoID"></param>
         /// <returns>http://error/drm (Uri) if DRM, m3u8 file URL (Uri) if no DRM</returns>
-        public static Uri getURL(int videoID)
+        public static Uri Get(int videoID)
         {
             Uri xmlURI = new Uri("http://gatling.nelonenmedia.fi/media-xml-cache?id=" + videoID);
             WebRequest request = WebRequest.Create(xmlURI);

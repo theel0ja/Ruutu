@@ -29,7 +29,7 @@ namespace Ruutu
 
                     if (videoIDparseResult == true)
                     {
-                        Uri mediaFileURL = GetMediaFileURL.getURL(videoID);
+                        Uri mediaFileURL = GetMediaFileURL.Get(videoID);
 
                         if (mediaFileURL.ToString() == "http://error/drm")
                         {
