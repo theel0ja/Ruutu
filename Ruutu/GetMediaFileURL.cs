@@ -14,8 +14,6 @@ namespace Ruutu
         /// <returns>http://error/drm (Uri) if DRM, m3u8 file URL (Uri) if no DRM</returns>
         public static Uri getURL(int videoID)
         {
-            // TODO: check if is <Playerdata><Clip><DRM>1
-
             Uri xmlURI = new Uri("http://gatling.nelonenmedia.fi/media-xml-cache?id=" + videoID);
             WebRequest request = WebRequest.Create(xmlURI);
 
