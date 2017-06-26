@@ -7,15 +7,20 @@ Small piece of software that opens [Ruutu.fi](http://www.ruutu.fi/) videos in VL
 ## Startup with Linux
 This application works also with Linux, download [Mono](http://www.mono-project.com/), and run `mono Ruutu.exe` in command line
 
-<!--
 ## API
 ```csharp
 using Ruutu.API;
-Uri ruutuUrl = new URI("http://www.ruutu.fi/video/1234567");
 
-OpenRuutuVideo(ruutuUrl);
+class Example
+{
+	static void Main()
+	{
+		Uri videoUrl = new Uri("http://www.ruutu.fi/video/1234567");
+
+		RuutuVideo.Open(videoUrl);
+	}
+}
 ```
--->
 
 ## License
 
