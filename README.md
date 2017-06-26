@@ -1,6 +1,7 @@
 # RuutuVLC
 
 [![Build Status](https://travis-ci.org/theel0ja/Ruutu.svg?branch=master)](https://travis-ci.org/theel0ja/Ruutu)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/332e8f07edc24522babd5883c20c845d)](https://www.codacy.com/app/theel0ja/Ruutu?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=theel0ja/Ruutu&amp;utm_campaign=Badge_Grade)
 
 Small piece of software that opens [Ruutu.fi](http://www.ruutu.fi/) videos in VLC.
 
