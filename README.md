@@ -1,5 +1,7 @@
 # Ruutu
 
+[![Build Status](https://travis-ci.org/theel0ja/Ruutu.svg?branch=master)](https://travis-ci.org/theel0ja/Ruutu)
+
 Small piece of software that opens [Ruutu.fi](http://www.ruutu.fi/) videos in VLC.
 
 ![Screenshot of the software](Screenshot.gif)
