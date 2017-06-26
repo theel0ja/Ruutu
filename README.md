@@ -7,7 +7,11 @@ Small piece of software that opens [Ruutu.fi](http://www.ruutu.fi/) videos in VL
 ![Screenshot of the software](Screenshot.gif)
 
 ## Startup with Linux
-This application works also with Linux, download [Mono](http://www.mono-project.com/), and run `mono Ruutu.exe` in command line
+### Debian, Ubuntu, Linux Mint and other distributions using .deb-packages
+Download prebuilt [.deb packages](https://github.com/theel0ja/Ruutu/releases) and install them. You can start Ruutu from command line with command `ruutuvlc` or from Start Menu.
+
+## Other Linux distributions
+This application works also with Linux, download [Mono](http://www.mono-project.com/), and run `mono Ruutu.exe` (get binaries [here](https://github.com/theel0ja/Ruutu/releases)) in command line.
 
 <!--
 ## API
