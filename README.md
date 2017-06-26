@@ -1,4 +1,4 @@
-# Ruutu
+# RuutuVLC
 
 [![Build Status](https://travis-ci.org/theel0ja/Ruutu.svg?branch=master)](https://travis-ci.org/theel0ja/Ruutu)
 
