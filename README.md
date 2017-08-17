@@ -14,6 +14,7 @@ Download prebuilt [.deb packages](https://github.com/theel0ja/Ruutu/releases) an
 ## Other Linux distributions
 This application works also with Linux, download [Mono](http://www.mono-project.com/), and run `mono Ruutu.exe` (get binaries [here](https://github.com/theel0ja/Ruutu/releases)) in command line.
 
+<!--
 ## API
 ```csharp
 using Ruutu.API;
@@ -28,6 +29,7 @@ class Example
 	}
 }
 ```
+-->
 
 ## License
 
